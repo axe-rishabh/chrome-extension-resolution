@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "Video Quality",
+    "description": "Sets the default video quality to 1080p if available, otherwise the highest quality available",
+    "version": "1.0",
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }],
+    "permissions": ["activeTab"]
+}
